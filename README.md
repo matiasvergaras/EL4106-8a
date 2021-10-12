@@ -12,3 +12,4 @@ https://drive.google.com/file/d/1NAQFCjDc71P12y3821FeBgeeCqc3ngVz/view?usp=shari
 - **sigmapsf_corr**:  estandar deviation from PSF-fit photometry
 - **magpsf_corr**: magnitude from PSF-fit photometry
 - **fid**: fid=1 (g filter) or fid=2 (R filter)
+- **mjd**: Modified Julian date
