@@ -1,10 +1,11 @@
 # EL4106-8a
-Clustering y visualización de curvas de luz de estrellas periódicas
+# Clustering y visualización de curvas de luz de estrellas periódicas
 
 
 Link al drive con los datos:
 https://drive.google.com/drive/folders/1CKlSU8ZU5yAGG5LgeorxjPdAt0HztVvS?usp=sharing
 
+## Estructura del repositorio
 El drive se encuentra estructurado en carpetas. Cada carpeta contiene un estado de los datos:
 
 **DATA_ORIGINAL:** el resultado de procesar los datos como nos fueron entregados la primera vez, con las siguientes columnas:
@@ -22,7 +23,7 @@ El drive se encuentra estructurado en carpetas. Cada carpeta contiene un estado 
 
 **DATA_AUGMENTATION:** observaciones sintéticas generadas para los objetos de tipo CEP, DSCT y PeriodicOther, en base a DATA_V2. Se incluye un archivo `lc_features_augmented.csv` que reune las curvas de luz de DATA_V2 con aquellas sintéticas, incorporando además una columna "target": el valor de `classALeRCE` asociado a cada objeto en el archivo `labels.csv`. 
 
-**¿Cómo explorar el trabajo realizado?**
+## ¿Cómo explorar el trabajo realizado?
 La respuesta es algo compleja. Dado que inicialmente hubieron muchas dificultades para obtener features desde los datos (inicialmente se indicó usar una librería deprecada y se cambiaron los datos 3 veces), entender el camino que se ha seguido es un tanto complejo. Se recomienda tomar el siguiente enfoque:
 - En la carpeta MP1, se encuentra la Carta Gantt inicial del proyecto. Debido a las dificultades, esta no pudo ser respetada.
 - En la carpeta MP2, se encuentran los primeros intentos de extracción de features, con la librería FATS deprecada. Tampoco hubo éxito.
