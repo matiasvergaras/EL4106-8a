@@ -7,6 +7,7 @@ https://drive.google.com/drive/folders/1CKlSU8ZU5yAGG5LgeorxjPdAt0HztVvS?usp=sha
 
 El drive se encuentra estructurado en carpetas. Cada carpeta contiene un estado de los datos:
 - DATA_ORIGINAL: el resultado de procesar los datos como nos fueron entregados la primera vez, con las siguientes columnas:
+
 -- **oid**: object id
 -- **candid**: candidate id
 -- **dec:** declination
