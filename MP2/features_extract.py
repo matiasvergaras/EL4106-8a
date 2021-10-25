@@ -5,6 +5,7 @@ import os.path
 import csv
 import matplotlib.pyplot as plt
 
+#Primero creamos el archivo con las curvas presentes en las alertas filtradas
 if not os.path.isfile("present_curves.csv"):
     filtered_alerts = pd.read_csv("filtered_alerts.csv")
     print("Creando present_curves.csv")
@@ -15,6 +16,8 @@ if not os.path.isfile("present_curves.csv"):
             present_curves.append(row['oid'])
             f.write(row['oid'] + '\n')
 
+# para cada entrada en filtered_alerts, la agregamos a alerts_G o alerts_R según su fid.
+# Esto es principalmente para cumpir con el formato necesario para FATS.
 if not os.path.isfile("alerts_G.csv") and not os.path.isfile("alerts_R.csv"):
     filtered_alerts = pd.read_csv("filtered_alerts.csv")
     print("Creando alerts_G.csv y alerts_R.csv")
@@ -36,7 +39,11 @@ if not os.path.isfile("alerts_G.csv") and not os.path.isfile("alerts_R.csv"):
             writerG.writerow(trow)
             writerR.writerow(trow)
 
+# De aqui en adelante intentabamos calcular features con FATS, pero no lo logramos.
+# Los csv generados anteriormente fueron útiles para pasarselos al notebook con TURBO-FATS.
+exit(0)
 
+# ------------ UNREACHABLE CODE ------------
 if not os.path.isfile("featured_alerts.csv"):
     print("Creando featured_alerts.csv")
     fG = pd.read_csv("alerts_G.csv", index_col = 'oid')
