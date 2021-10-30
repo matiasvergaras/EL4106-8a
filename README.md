@@ -1,5 +1,21 @@
 # EL4106-8a
 # Clustering y visualización de curvas de luz de estrellas periódicas
+Este repositorio contiene el trabajo realizado como proyecto semestral del curso EL4106 - Inteligencia Computacional por los alumnos Nicolás Canales y Matías Vergara. Correspondiente al Semestre Primavera 2021, el Profesor es Pablo Estevez, el Auxiliar es Ignacio Reyes Jainaga, y el monitor a cargo es Javier Molina.
+
+El objetivo del proyecto es usar algoritmos de aprendizaje no supervisado para encontrar grupos de similitud en las curvas de luz periódicas. Dada la dificultad de explorar patrones en espacios de alta dimensionalidad, un conjunto de características de las curvas se puede proyectar a un espacio bidimensional en donde las estructuras presentes en los datos sean preservadas y así se vuelvan visualmente identificables.
+
+Para este proyecto, interesa estudiar los diferentes prototipos que emerjan para las distintas clases y clusters; identificar la existencia de subclusters dentro de un cluster mayor, que se correspondan con las subclases presentes en los datos; caracterizar aquellas curvas de luz que se ubiquen en la periferia (outliers), y aquellas que tengan cierta pertenencia a más de un cluster.
+
+El proyecto se dividirá en las siguientes etapas:
+Exploración preliminar de los datos usando visualizaciones (e.g. UMAP, corner plots).
+Visualización de los datos utilizando autoencoders (cuello de botella bidimensional).
+Clustering con modelo de mezcla de gaussianas sobre el cuello de botella de un autoencoder (con 2 dimensiones o más).
+Visualización de las curvas de luz asociadas a los clusters y análisis.
+
+Los datos a utilizar corresponden a ALeRCE - ZTF, donde hay disponibles curvas de luz y features precalculados. Los objetos serán representados mediante los features o un subconjunto de ellos, mientras que las curvas de luz se utilizarán para la etapa de análisis de clusters.
+
+---
+
 Link al drive con los datos:
 https://drive.google.com/drive/folders/1CKlSU8ZU5yAGG5LgeorxjPdAt0HztVvS?usp=sharing
 
