@@ -1,11 +1,16 @@
 # EL4106-8a
 # Clustering y visualización de curvas de luz de estrellas periódicas
-
-
 Link al drive con los datos:
 https://drive.google.com/drive/folders/1CKlSU8ZU5yAGG5LgeorxjPdAt0HztVvS?usp=sharing
 
-## Estructura del repositorio
+## Estructura del repositorio 
+Cada carpeta tiene el avance relativo a un Meeting Project del curso. La carpeta Papers, por su parte, incluye los papers de referencia del proyecto. En la raíz se incluye el informe preliminar, el dataset de labels (transversal a todos los MP) y el html con el análisis exploratorio de los datos, incluyendo la data sintética (profile_data_augmented). 
+
+El preprocesamiento de datos se realiza principalmente mediante scripts destinados a correr localmente, pues requieren de tiempos de computación excesivos (sobre 40 horas). Por otro lado, la aplicación de modelos se lleva a cabo mediante Notebooks de Python, los cuales se encuentran disponibles a partir de la carpeta MP3 (UMAP.ipynb, Autoencoders.ipynb). 
+
+Cada notebook incluye instrucciones para descargar los datos necesarios desde una carpeta Drive donde están accesibles mediante `gdown`, por lo cual deberían ser reproducibles por cualquier usuario. En caso de presentar dificultades, contactar a matiasvergara@ug.uchile.cl.
+
+## Estructura del Drive
 El drive se encuentra estructurado en carpetas. Cada carpeta contiene un estado de los datos:
 
 **DATA_ORIGINAL:** el resultado de procesar los datos como nos fueron entregados la primera vez, con las siguientes columnas:
